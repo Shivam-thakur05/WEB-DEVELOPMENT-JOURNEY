@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:aquamarine;
+            --custom-width: 360px;
+        }
+        .container{
+            background-color: beige;
+            display: flex;
+            height: 650px;
+            border: 2px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img{
+            width: 50px;
+            display: flex;
+            flex-direction: row;
+        }
+        .box{
+            /*custom variable*/
+            --primary-color:aquamarine;
+            --custom-width: 360px;
+
+            background-color: var(--primary-color);
+            width: var(--custom-width);
+            height: 300px;
+            border: 1px solid brown;
+            margin: 5px;
+            padding: 5px;
+            /*box-shadow: 10px 10px 40px brown;*/
+            /*box-shadow: 10px 10px 5px 50px black;*/
+            /*box-shadow: inset 10px 25px 5px brown;*/
+            box-shadow: 10px 15px red , 15px 8px green;
+        }
+        #head1{
+            /* text-shadow: 2px 3px 2px white; */
+            text-shadow: yellow 12px 13px 2px; 
+           /*text-shadow: white 12px 13px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="logo.jpeg" alt="logo">
+            <h2>SHIVAM <strong>HELP</strong></h2>
+            <h3 id="head1">Welcome to ShivamHelp</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores incidunt, reprehenderit sunt ea quaerat saepe ex nisi qui, optio ducimus debitis nam natus reiciendis perspiciatis. In accusamus excepturi expedita quidem?</p>
+        </div>
+    </div>
+</body>
+</html>

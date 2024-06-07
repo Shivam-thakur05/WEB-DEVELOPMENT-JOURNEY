@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(156, 193, 195);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box2{
+            height: 430px;
+            width: 260px;
+            background-color: aliceblue;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        img{
+            border: 0px solid black;
+            border-radius: 15px;
+        }
+        .order{
+            margin-left: 10px;
+            position: relative;
+            top: 7%;
+        }
+        .box3{
+            background-color: rgb(156, 193, 195);
+            height: 40px;
+            width: 220px;
+            margin: 20px;
+            position: relative;
+            top: 6%;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .box3 a{
+            padding: 10px;
+            text-decoration: none;
+            color: blue;
+        }
+        .box3 p{
+            font-size: 13px;
+            padding: 20px;
+            font-weight: 600;
+        }
+        button{
+            height: 45px;
+            width: 220px;
+            margin:20px ;
+            align-items: center;
+            background-color: rgb(11, 11, 54);
+            color: antiquewhite;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box2">
+            <img src="image.jpeg" alt="" height="140px" width="260px">
+            <div class="order">
+                <center><h3>Order Summary</h3></center>
+                <center><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aliquid architect</p></center>
+            </div>
+            <div class="box3">
+                <img src="download.jpeg" alt="" height="40px">
+                <p>Annual Plan $99.9/year</p>
+                <a href="">Change</a>    
+            </div>
+            <div class="button">
+                <button>Proceed to Payment</button>
+            </div>
+            <div><center><p>Cancel Order</p></center></div>
+        </div>
+    </div>
+</body>
+</html>

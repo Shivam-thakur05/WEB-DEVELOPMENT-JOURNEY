@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: beige;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            transition-delay: 0s;
+            transition-property:all;
+            transition-duration: 1s;
+
+        }
+        .box:hover{
+            transform: rotate(45deg);
+        }
+        p{
+            font-size: 30px;
+        }
+
+        .box2{
+             background-color: beige;
+             height: 300px;
+             width: 300px;
+             border: 2px solid black;
+             transition: all 1s linear;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             margin: 30%;
+             transition: all 2s linear 0s;
+        }
+        .box2:hover{
+            /*transform: rotate(360deg);*/
+            /*transform: scale(0.5);*/
+            /*transform: skew(45deg);*/
+            transform: translate(-500px);
+        }
+
+
+
+    </style>
+</head>
+<body>
+     <div class="box">
+        <p>this is a box</p>
+     </div>
+     <div class="box2">
+        <p>this is second box</p>
+     </div>
+</body>
+</html>

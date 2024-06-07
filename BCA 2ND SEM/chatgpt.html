@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <p>Thank you for participating in our survey. Please provide your feedback below:</p>
+        
+        <form action="submit.php" method="POST"> <!-- Replace "submit.php" with your actual form submission URL -->
+            <!-- Question 1 -->
+            <div class="question">
+                <label for="q1">Question 1:</label>
+                <input type="text" id="q1" name="question1" required>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <label for="q2">Question 2:</label>
+                <select id="q2" name="question2" required>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <label for="q3">Question 3:</label>
+                <textarea id="q3" name="question3" rows="4" required></textarea>
+            </div>
+
+            <!-- Add more questions as needed -->
+
+            <div class="submit-button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
