@@ -13,7 +13,3 @@ for (const i in s) {
     }
 }
 */
-let a = 7
-a.forEach(element => {
-    console.log("ram")
-});

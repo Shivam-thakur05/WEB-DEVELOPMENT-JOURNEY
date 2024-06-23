@@ -12,3 +12,11 @@ do{
     a++;
 } while(a <= 5);
  */
+/*
+let UserNum = prompt("enter the number : ")
+let RealNum = 25
+while(UserNum != RealNum){
+    UserNum = prompt("Wrong Number! Guess Number again...")
+}
+console.log("Congrats! you find the right number.");
+*/
